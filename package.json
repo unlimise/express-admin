@@ -56,6 +56,6 @@
         "admin": "./bin/admin"
     },
     "scripts": {
-        "test": "make test"
+        "test": "node app.js"
     }
 }
