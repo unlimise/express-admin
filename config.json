@@ -1,0 +1,15 @@
+{
+    "mysql": {
+        "database": "triproject",
+        "user": "root",
+        "password": "12345"
+    },
+    "server": {
+        "port": 3000
+    },
+    "app": {
+        "layouts": true,
+        "themes": true,
+        "languages": true
+    }
+}

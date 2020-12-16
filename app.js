@@ -56,7 +56,7 @@ function initDatabase (args, done) {
 
     async.series([
         function (done) {
-            var options = args.config.mysql||args.config.pg||args.config.sqlite;
+            var options = process.env.JAWSDB_MARIA_URL || args.config.mysql||args.config.pg||args.config.sqlite;
             client.connect(options, function (err) {
                 if (err) return done(err);
                 var x = new Xsql({
